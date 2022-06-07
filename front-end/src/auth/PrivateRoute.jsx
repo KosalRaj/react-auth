@@ -1,9 +1,9 @@
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Navigate } from 'react-router-dom';
 
 export const PrivateRoutes = props => {
   const user = null;
 
-  if (!user) return <Redirect to="/login" />
+  if (!user) return <Navigate to="/login" />
 
-  return <Route {...props} />
+  return <Route {...props} /> 
 }

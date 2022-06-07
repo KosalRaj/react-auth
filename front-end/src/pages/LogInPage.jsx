@@ -19,7 +19,7 @@ const LogInPage = () => {
   const onEmailInput = (e) => setEmailVal(e.target.value)
 
   return (
-    <div className="grid place-content-center h-screen bg-slate-100">
+    <div className="grid place-content-center h-[calc(100vh-3rem)] bg-slate-100">
       <div className="overflow-hidden grid grid-cols-2 rounded-lg bg-white shadow-xl">
         <img src={Welcome} alt="Welcome" className="h-80 mx-12 my-16" />
         <div className="flex flex-col gap-4 p-10 border-l-2 border-green justify-center">

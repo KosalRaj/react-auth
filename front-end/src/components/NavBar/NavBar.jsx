@@ -1,12 +1,15 @@
 import React from 'react';
+import { ButtonBase } from '../Buttons'
 
 const NavBar = () => {
   return (
-    <nav className='flex justify-between'>
-      <div className="logo">
-        <ButtonBase as="a">Logo</ButtonBase>
-      </div>
-    </nav>
+    <header className='shadow-xl'>
+      <nav className='flex justify-between max-w-5xl mx-auto px-4'>
+        <div className="logo">
+          <ButtonBase as="a">Logo</ButtonBase>
+        </div>
+      </nav>
+    </header>
   )
 }
 
